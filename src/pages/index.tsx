@@ -3,21 +3,20 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+type NewType = JSX.Element;
+
+export default function Home(): NewType {
   return (
-    <div class="w-full h-screen flex items-center justify-center bg-indigo-100">
-      <form class="w-full md:w-1/3 rounded-lg">
-        <div class="flex font-bold justify-center mt-6">
-          <img class="h-20 w-20 mb-3" src="https://dummyimage.com/64x64" />
-        </div>
-        <h2 class="text-2xl text-center text-gray-200 mb-8">Login</h2>
-        <div class="px-12 pb-10">
-          <div class="w-full mb-2">
-            <div class="flex items-center">
+    <div className="w-full h-screen flex items-center justify-center bg-indigo-100">
+      <form className="w-full md:w-1/3 rounded-lg">
+        <h2 className="text-2xl text-center text-gray-200 mb-8">Login</h2>
+        <div className="px-12 pb-10">
+          <div className="w-full mb-2">
+            <div className="flex items-center">
               <input
                 type="text"
                 placeholder="Email Address"
-                class="
+                className="
                  w-full
                  border
                  rounded
@@ -29,12 +28,12 @@ export default function Home() {
               />
             </div>
           </div>
-          <div class="w-full mb-2">
-            <div class="flex items-center">
+          <div className="w-full mb-2">
+            <div className="flex items-center">
               <input
                 type="password"
                 placeholder="Password"
-                class="
+                className="
                  w-full
                  border
                  rounded
@@ -48,7 +47,7 @@ export default function Home() {
           </div>
           <button
             type="submit"
-            class="
+            className="
              w-full
              py-2
              mt-8
